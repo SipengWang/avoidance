@@ -1,0 +1,3 @@
+1. 经过玄学尝试，发现如下问题： master分支中，local与global都能运行，但是模型中并没有stereo_camera的模型，为啥没有模型也能运行呢？只是订阅话题的时候看不到图像，但是避障与路径规划都是能够正常运行的。
+对于0.3.1分支，有stereo_camera模型，global_planner能够运行，但是local_planner会报`MPC_COL_D`找不到的错误。这个参数在地面站中也没有找到。
+所以目前的解决方案是，使用master分支，然后在model中加上stereo_camera的模型，还是能够运行的。
