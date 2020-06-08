@@ -1,6 +1,6 @@
 <launch>
 
-    <arg name="world_file_name"    default="simple_obstacle" />
+    <arg name="world_file_name"    default="boxes1" />
     <arg name="world_path" default="$(find avoidance)/sim/worlds/$(arg world_file_name).world" />
     <arg name="pointcloud_topics" default="[/camera/depth/points]"/>
     <arg name="start_pos_x" default="0.5" />
@@ -26,6 +26,7 @@
         <arg name="start_pos_x" value="$(arg start_pos_x)" />
         <arg name="start_pos_y" value="$(arg start_pos_y)" />
         <arg name="start_pos_z" value="$(arg start_pos_z)" />
+        <arg name="world_file_name" value="$(arg world_file_name)"/>
     </include>>
 
     <node pkg="rviz" type="rviz" output="screen" name="rviz" respawn="true"

@@ -4,5 +4,6 @@ export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:~/catkin_ws/Firmware
 export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:~/catkin_ws/avoidance/src/avoidance/avoidance/sim/models:~/catkin_ws/avoidance/src/avoidance/avoidance/sim/worlds
 
 
-roslaunch local_planner local_planner_stereo.launch
+# roslaunch local_planner local_planner_stereo.launch
 # roslaunch global_planner global_planner_stereo.launch
+roslaunch global_planner global_planner_depth-camera.launch

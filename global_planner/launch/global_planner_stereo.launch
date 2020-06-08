@@ -19,6 +19,7 @@
         <arg name="start_pos_y" value="$(arg start_pos_y)" />
         <arg name="start_pos_z" value="$(arg start_pos_z)" />
         <arg name="pointcloud_topics" value="$(arg pointcloud_topics)"/>
+        <arg name="world_file_name" value="$(arg world_file_name)"/>
     </include>
 
     <!-- RViz -->
